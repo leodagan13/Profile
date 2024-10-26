@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Roméo IVALDY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+
+        .photo-profil {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1rem auto;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #2c3e50;
+        }
+
+        .contact-info {
+            background-color: #34495e;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .info-supplementaire {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        main {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0 0 10px 10px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .experience, .education {
+            margin-bottom: 1.5rem;
+        }
+
+        .date {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .competences {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .competence {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .competence:hover {
+            transform: translateY(-3px);
+            background-color: #e9ecef;
+        }
+
+        .atouts-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .atouts-list li {
+            background-color: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .centres-interet {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .centre-interet {
+            background-color: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .location {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+            }
+            
+            header {
+                border-radius: 0;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="photo-profil">RI</div>
+            <h1>Roméo IVALDY</h1>
+            <h2 style="color: white; border: none;">Assistant Multifonction</h2>
+        </header>
+
+        <div class="contact-info">
+            <a href="mailto:romeo.ivaldy@gmail.com">📧 romeo.ivaldy@gmail.com</a>
+            <a href="tel:+33782271258">📞 07 82 27 12 58</a>
+            <a href="https://linkedin.com/in/romeo-ivaldy">🔗 LinkedIn</a>
+            <div class="info-supplementaire">📍 Marseille (13009)</div>
+            <div class="info-supplementaire">🎂 19 ans</div>
+            <div class="info-supplementaire">🚤 Permis côtier</div>
+        </div>
+
+        <main>
+            <section>
+                <h2>Atouts</h2>
+                <ul class="atouts-list">
+                    <li>Bon relationnel</li>
+                    <li>Facilité avec les chiffres</li>
+                    <li>Adaptabilité rapide aux nouvelles technologies</li>
+                </ul>
+            </section>
+
+           <section>
+                <h2>Expériences Professionnelles</h2>
+                <div class="experience">
+                    <h3>Agent polyvalent - Duoo.gg</h3>
+                    <div class="date">Depuis septembre 2023</div>
+                    <ul>
+                        <li>Prospection en vue de partenariats</li>
+                        <li>Création de visuels promotionnels d'un site web via réseaux sociaux sur Photoshop</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Assistant du Directeur & Manager d'équipe de vente - AMN</h3>
+                    <div class="location">Phnom Penh, Cambodge</div>
+                    <div class="date">Février 2024 - Juillet 2024</div>
+                    <ul>
+                        <li>Assistance directe auprès de la direction</li>
+                        <li>Management et coordination de l'équipe de vente</li>
+                        <li>Expérience internationale dans un contexte multiculturel</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Audit - Comptoir de Mathilde</h3>
+                    <div class="location">Marseille / Orange</div>
+                    <div class="date">Janvier 2023 - Mai 2023</div>
+                    <ul>
+                        <li>Étude de marché et analyse financière</li>
+                        <li>Définition de l'opportunité pour la création d'une sous-marque</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section>
+                <h2>Formation</h2>
+                <div class="education">
+                    <h3>Bachelor Management - KEDGE Business School</h3>
+                    <div class="date">Depuis septembre 2022</div>
+                    <p>Délégué de classe (2023-2024)</p>
+                </div>
+                <div class="education">
+                    <h3>Baccalauréat - Lycée Jean Perrin Marseille 10</h3>
+                    <div class="date">2019 - 2022</div>
+                    <p>Spécialités : Numérique et Sciences Informatiques, Langues, Littératures et Cultures Étrangères (Anglais)</p>
+                    <p>Option : Classe Européenne</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Compétences Informatiques</h2>
+                <div class="competences">
+                    <div class="competence">Excel / Google Sheets</div>
+                    <div class="competence">Powerpoint</div>
+                    <div class="competence">Photoshop</div>
+                    <div class="competence">Vegas Pro</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Langues</h2>
+                <div class="competences">
+                    <div class="competence">Français - Langue natale</div>
+                    <div class="competence">Anglais - Niveau B2 (CEC)</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Personnalité</h2>
+                <div class="competences">
+                    <div class="competence">Patient</div>
+                    <div class="competence">Désireux d'apprendre</div>
+                    <div class="competence">Persévérant</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Centres d'intérêt</h2>
+                <div class="centres-interet">
+                    <div class="centre-interet">Gestion du patrimoine familial</div>
+                    <div class="centre-interet">Lecture</div>
+                    <div class="centre-interet">Échecs</div>
+                    <div class="centre-interet">Musculation</div>
+                    <div class="centre-interet">Boxe</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Animation simple pour les compétences et centres d'intérêt
+        document.querySelectorAll('.competence, .centre-interet').forEach(element => {
+            element.addEventListener('click', () => {
+                element.style.backgroundColor = '#3498db';
+                element.style.color = 'white';
+                setTimeout(() => {
+                    element.style.backgroundColor = '';
+                    element.style.color = '';
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
